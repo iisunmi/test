@@ -1,2 +1,80 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+/*
+  주석 (블럭형)
+  여러 줄에 메모를 작성
+  이 소스 작성자, 날짜, 라이센스
+*/
+
+/*
+
+프로그램의 첫 실행
+콘솔 C언어 프로그램은 반드시 main()으로 시작
+void : 소괄호에 내용이 없다는 뜻
+return : 함수가 종료된다는 뜻
+printf은 콘솔 화면에 출력
+#include 헤더파일을 읽어오라는 명령(전처리 명령)
+전처리 : 빌드하기 전
+전처리 문법 , c언어 문법
+소스파일 안에 파일은 여러개여도 되지만 main함수는 하나만 있어야 함. 여러개면 충돌일어남
+
+#include <stdio.h>은 표준입출력과 관련된 함수들이 있는 헤더파일
+#include <string.h>에는 문자열 처리
+#include <stdlib.h> 기타 유틸리티
+항상 작성하기!!!
+
+#include <math.h>에는 산수
+#include <conio.h>는 콘솔용 입출력(하드웨어에 포커싱)
+가끔 사용하기!!!
+
+
+
+*/
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int main(void) {
+	
+	printf("안뇽\n");
+	return 0;
+	
+}
+//솔루션 빌드 후에 실패가 뜨면 에러의 헤더 파일(파일의 확장자가 h인 것)을 검색해서 찾자.
+
+
+/* C언어의 자료형~문제를 보고 처리할 값들이 어떤 종류인지
+                 ~값을 저장하는 기본형
+				 char 문자 = 'ABCD'; 아스키 코드 문자가 기준, 1byte***
+				 int 정수 4 = 10; 4byte***
+				 double 실수 8; math, h 함수들의 기본형***
+
+				 short 정수 2 = 10; 2byte
+				 long 정수 4 = 10; int ?
+				 long long 정수 8 = 100;
+				 float 실수 4;
+				 
+				 
+				 ~주소를 저장하는 참조형(포인터형)
+				 char *s;
+				 
+				 */
+
+/*
+자료형 변수의 선언과 사용*/
+int num;
+num = 10;
+printf("%d\n", num);
+printf("%c  %d   %lf   %s       \n",
+       'A' 정수, 실수,"String" );
+
+//형식 문자열
+// %d : 형식 지정자 (d는 정수(10진수), x는 정수(16진))
+//%c(char), %s(string), lf(long float)(실수), p(주소형)
+
+
+
+
+
+
+
+
+return 0;
